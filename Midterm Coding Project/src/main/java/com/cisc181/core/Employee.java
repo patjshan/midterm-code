@@ -7,10 +7,7 @@ public class Employee extends Person implements java.io.Serializable{
     private double salary;
     private Date hire;
 
-    /**
-     * Employee no-arg constructor
-     * @since - 07/13/2014
-     */
+    
     public Employee() {
     }
 
@@ -26,10 +23,11 @@ public class Employee extends Person implements java.io.Serializable{
      * @param office
      * @param salary
      * @param hire
+     * @throws PersonException 
      */
     public Employee(String FirstName, String MiddleName, String LastName,Date DOB,
 			String Address, String Phone_number, String Email,
-			String office, double salary, Date hire)
+			String office, double salary, Date hire) throws PersonException
     {
     	super(FirstName, MiddleName, LastName, DOB, Address, Phone_number, Email);
         this.office = office;
