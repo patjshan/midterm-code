@@ -8,6 +8,13 @@ public class Semester {
 	private UUID SemesterID;
 	private Date Startdate;
 	private Date Enddate;
+	
+	public Semester(Date startdate, Date enddate) {
+		this.SemesterID = UUID.randomUUID();
+		this.Enddate = enddate;
+		this.Startdate = startdate;
+	}
+	
 	public UUID getSemesterID() {
 		return SemesterID;
 	}
